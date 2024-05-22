@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "target": "ES6",                                  // Ciljni ECMAScript standard
+      "module": "commonjs",                             // Modul sistem koji se koristi
+      "strict": true,                                   // Omogućava striktan mod
+      "esModuleInterop": true,                          // Pomaže u interoperabilnosti sa ECMAScript modula
+      "skipLibCheck": true,                             // Preskače proveru tipova u fajlovima definicija
+      "outDir": "./dist",                               // Izlazni direktorijum za kompajlirane fajlove
+      "rootDir": "./src",                               // Korenski direktorijum za ulazne fajlove
+      "resolveJsonModule": true,                        // Omogućava import JSON fajlova kao module
+      "sourceMap": true,                                // Generiše sourcemap fajlove
+      "noImplicitAny": true,                            // Onemogućava neizričit "any" tip
+      "moduleResolution": "node",                       // Modul rezolucija strategija koja se koristi
+      "baseUrl": ".",                                   // Osnovna putanja za rezoluciju modula
+      "paths": {                                        // Mape za rezoluciju modula
+        "@app/*": ["src/app/*"],
+        "@config/*": ["src/config/*"]
+      }
+    },
+    "include": ["src"],                                 // Direktorijumi/fajlovi koji se uključuju u kompajliranje
+    "exclude": ["node_modules", "dist", "test"]         // Direktorijumi/fajlovi koji se isključuju iz kompajliranja
+  }
